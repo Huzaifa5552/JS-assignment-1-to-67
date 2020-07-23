@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //1. Write a program that displays current date and time in
+    // your browser.
+    // ---sol---
+    // var d = Date()
+    // alert(d)
+    // ----------------------------------------------------------------------
+    //2. Write a program that alerts the current month in words.
+    // For example December.
+    // ---sol---
+    // var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    // var d = new Date()
+    // alert(month[d.getMonth()])
+    // ----------------------------------------------------------------------
+    //3. Write a program that alerts the first 3 letters of the current
+    // day, for example if today is Sunday then alert will show
+    // Sun.
+    // ---sol---
+    // var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    // var d = new Date()
+    // alert(week[d.getDay()])
+    // ----------------------------------------------------------------------
+    //4. Write a program that displays a message “It’s Fun day” if
+    // its Saturday or Sunday today.
+    // var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    // var d = new Date()
+    // var td = d.getDay()
+    // if (td === 6 || td === 7) {
+    //     alert("its Fun Day")
+    // }
+    // ----------------------------------------------------------------------
+    //5. Write a program that shows the message “First fifteen
+    // days of the month” if the date is less than 16th of the month
+    // else shows “Last days of the month”.
+    // ---sol---
+    // var d = new Date()
+    // var date = d.getDate()
+    // if (date < 16) {
+    //     alert("First fifteen days of the month")
+    // } else {
+    //     alert("Last days of the month")
+    // }
+    // ----------------------------------------------------------------------
+    //6. Write a program that determines the minutes since
+    // midnight, Jan. 1, 1970 and assigns it to a variable that
+    // hasn't been declared beforehand. Use any variable you like
+    // to represent the Date object.
+    // ---sol---
+    // var d = new Date()
+    // alert("Current Date: " + d + "\nElapsed Millisecond Since jan 1,1970: " + d.getTime() + "\nElapsed Minutes Since jan 1,1970: " + d.getTime() / 6000)
+    // ----------------------------------------------------------------------
+    //7. Write a program that tests whether it's before noon and
+    // alert “Its AM” else “its PM”.
+    // var d = new Date()
+    // var h = d.getHours()
+    // var m = d.getMinutes()
+    // console.log(h + ":" + m)
+    // if (h < 13) {
+    //     alert("AM")
+    // } else {
+    //     alert("PM")
+    // }
+    // ----------------------------------------------------------------------
+</script>
+
+</html>

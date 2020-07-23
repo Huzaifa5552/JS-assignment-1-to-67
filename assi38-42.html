@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Chapter 38 -42 FUNCTIONS, SWITCH STATEMENTS, WHILE… DOWHILE LOOPS </h1>
+</body>
+<script>
+    //1. Write a custom function power ( a, b ), to calculate the value of
+    // a raised to b.
+    // ---sol---
+    // var a = parseInt(prompt("Enter A number"))
+    // var b = parseInt(prompt("Enter A power"))
+    // alert(a + " Power " + b + " = " + Math.pow(a, b))
+    // ------------------------------------------------------------------------
+    //2. Any year is entered through the keyboard. Write a function to
+    // determine whether the year is a leap year or not.
+    // ---sol---
+    // function leapYear(year) {
+    //     var days = new Date(year, 2, 0).getDate()
+    //     console.log(days)
+    //     if (days < 29) {
+    //         alert("NOT a leap Year")
+    //     } else {
+    //         alert("Its A leap Year")
+    //     }
+    // }
+    // var fin = prompt("Enter Year to find is a leap or not")
+    // leapYear(fin)
+    // ------------------------------------------------------------------------
+    //3. If the lengths of the sides of a triangle are denoted by a, b, and
+    // c, then area of triangle is given by
+    // area = S(S − a)(S − b)(S − c)
+    // where, S = ( a + b + c ) / 2
+    // ---sol---
+    // var a = 3
+    // var b = 4
+    // var c = 5
+
+    // function s() {
+    //     var abc = (a + b + c) / 2
+    //     return abc
+    // }
+    // var S = s()
+
+    // function areaTriangle() {
+    //     var area = S * (S - a) * (S - b) * (S - c)
+    //     return area
+    // }
+    // alert("Area of Triangle " + areaTriangle())
+    // ------------------------------------------------------------------------
+    //4. Write a function that receives marks received by a student in 3
+    // subjects and returns the average and percentage of these
+    // marks. there should be 3 functions one is the mainFunction
+    // and other are for average and percentage. Call those functions
+    // from mainFunction and display result in mainFunction.
+    // ---sol---
+    // var sub1 = parseInt(prompt("Enter Obtained Number in Subjet 1")),
+    //     sub2 = parseInt(prompt("Enter Obtained Number in Subjet 2")),
+    //     sub3 = parseInt(prompt("Enter Obtained Number in Subjet 3"))
+
+    // function avg(sub1, sub2, sub3) {
+    //     return (sub1 + sub2 + sub3) / 3
+    // }
+    // console.log(avg(sub1, sub2, sub3))
+
+    // function per(sub1, sub2, sub3) {
+    //     return (sub1 + sub2 + sub3) / 300 * 100 + "%"
+    // }
+    // console.log(per(sub1, sub2, sub3))
+
+    // function mainFunc() {
+    //     alert("Obtained Numbers Out of 100 \nSub1 = " + sub1 + "\nsub2 = " + sub2 + "\nsub3 = " + sub3 +
+    //         "\nAverage = " + avg(sub1, sub2, sub3) +
+    //         "\nPercentage = " + per(sub1, sub2, sub3))
+    // }
+    // mainFunc()
+    // ------------------------------------------------------------------------
+    //5. You have learned the function indexOf. Code your own custom
+    // function that will perform the same functionality. You can code
+    // for single character as of now.
+    // ---sol---
+    // var str = "hello"
+    // var ch = "o"
+    // for (var i = 0; i < str.length; i++) {
+    //     if (ch === str[i]) {
+    //         alert("enterd character" + ch + " is at indexOf " + i)
+    //     }
+    // }
+    // ------------------------------------------------------------------------
+    //6. Write a function to delete all vowels from a sentence. Assume
+    // that the sentence is not more than 25 characters long.
+    // ---sol---
+    // var txt = "hello world"
+
+    // function vow() {
+    //     for (var i = 0; i < txt.length; i++) {
+    //         console.log(txt[i])
+    //         if (txt[i] == "a") { // || txt[i] === "e" || txt[i] === "i" || txt[i] === "o" || txt[i] === "u") {
+    //             var newTxt
+    //             newTxt = txt.replace(/txt[i]/g, "x")
+    //         }
+    //     }
+    //     console.log(newTxt)
+    // }
+    // vow()
+    // ------------------------------------------------------------------------
+    //7. Write a function with switch statement to count the number of
+    // occurrences of any two vowels in succession in a line of text. 
+    // ---sol---
+    // function findOccurrences() {
+    //     var str = "Pleases read this application and give me gratuity";
+    //     var count = 0;
+
+    //     switch (str) {
+    //         case 'a':
+    //             count++;
+    //         case 'A':
+    //             count++
+    //         case 'e':
+    //         case 'E':
+    //         case 'i':
+    //         case 'I':
+    //         case 'o':
+    //         case 'O':
+    //         case 'u':
+    //         case 'U':
+    //             return 1;
+    //         default:
+    //             return 0;
+    //     }
+    // }
+    // console.log(findOccurrences())
+    // ------------------------------------------------------------------------
+    //8. The distance between two cities (in km.) is input through the
+    // keyboard. Write four functions to convert and print this
+    // distance in meters, feet, inches and centimeters.
+    // ---sol---
+    // var ditInM = parseInt(prompt("Enter Disteance in kilo meters"))
+
+    // function meters() {
+    //     return ditInM / 1000 + " meters"
+    // }
+
+    // function feet() {
+    //     return ditInM / 3280.84 + " feets"
+    // }
+
+    // function inches() {
+    //     return ditInM / 39370.1 + " inches"
+    // }
+
+    // function cm() {
+    //     return ditInM / 100000 + " cm"
+    // }
+    // alert(meters() + "\n" + feet() + "\n" + inches() + "\n" + cm())
+    // ------------------------------------------------------------------------
+    //9. Write a program to calculate overtime pay of employees.
+    // Overtime is paid at the rate of Rs. 12.00 per hour for every hour
+    // worked above 40 hours. Assume that employees do not work
+    // for fractional part of an hour.
+    // ---sol---
+    // var overTime = 2
+    // alert("The over time hours are " + overTime + " and pay is " + overTime * 12)
+    // ------------------------------------------------------------------------
+    //10. A cashier has currency notes of denominations 10, 50 and
+    // 100. If the amount to be withdrawn is input through the
+    // keyboard in hundreds, find the total number of currency notes
+    // of each denomination the cashier will have to give to the
+    // withdrawer.
+    // ---sol---
+    // var amount = parseInt(prompt("Enter Amount"))
+
+    // alert("You will have \n" + Math.trunc(amount / 100) + " Hundred Notes")
+    // alert(Math.trunc((amount % 100) / 50) + " Fifty Notes")
+    // alert(Math.trunc(((amount % 100) % 50) / 10) + " Ten Notes")
+</script>
+
+</html>

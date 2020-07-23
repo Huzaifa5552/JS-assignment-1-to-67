@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 2.4
+        var userName, age, _class;
+        userName = prompt("Enter Your Name");
+        age = prompt("Enter Your Age");
+        _class = prompt("Enter Your Class");
+
+        document.write("<p>Name:" + userName + "</p><p>Age:" + age + "</p></p>Class:" + _class + "</p>");
+        // 2.5
+        var pizza = "PIZZA";
+        var pizz = "PIZZ";
+        var piz = "PIZ";
+        var pi = "PI";
+        var p = "P";
+        alert(pizza + "\n" + pizz + "\n" + piz + "\n" + pi + "\n" + p);
+        // 2.7
+        var sent = "I m tryna learn from the BOOK";
+        var book = "A Smarter Way To Learn JS";
+        alert(sent + " " + book);
+        // 2.9
+        var code = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
+        alert(code);
+        // 5.2
+        var num1, num2, add, sub, mul, div, mod;
+        num1 = prompt("Enter 1st Number");
+        num2 = prompt("Enter 2st Number");
+        add = +num1 + +num2;
+        sub = num1 - num2;
+        mul = num1 * num2;
+        div = num1 / num2;
+        mod = num1 % num2;
+        document.write("Your Numbers : " + num1 + " & " + num2 + "<br>");
+        document.write("Addition:" + add + "<br>");
+        document.write("Subtraction:" + sub + "<br>");
+        document.write("multiplication:" + mul + "<br>");
+        document.write("Division:" + div + "<br>");
+        document.write("Modulus:" + mod);
+        // ch12 -13
+        // task 1
+        var character = prompt("Enter a string")
+        if (character === character.toLowerCase()) {
+            alert(" The character is lowercase")
+        } else if (character === character.toUpperCase()) {
+            alert(" The character is uppercase")
+        } else {
+            alert("Its A number")
+        }
+        // task2
+        var num1 = +prompt("Enter 1st Number")
+        var num2 = +prompt("Enter 2nd Number")
+
+        if (num1 > num2) {
+            alert(num1 + " is greater then " + num2)
+        } else {
+            alert(num2 + " is greater then " + num1)
+        }
+        // task3
+        var num1 = +prompt("Enter 1st Number")
+
+        if (num1 > 0) {
+            alert("Positive")
+        } else if (num1 === 0) {
+            alert("The Number is ZERO")
+        } else {
+            alert("Negative")
+        }
+        // task4
+        var string = prompt("Enter a String")
+
+        if (string === "a" || string === "e" || string === "i" || string === "o" || string === "u" ||
+            string === "A" || string === "E" || string === "I" || string === "O" || string === "U") {
+            alert("Its a vowel!")
+        } else if (string > 0 || string < 0) {
+            alert("Enter a String!")
+        } else {
+            alert("Not a Vowel!")
+        }
+        // task5
+        var pass = prompt("Enter a Password")
+
+        if (pass === "") {
+            alert("Enter a Password")
+        } else {
+            var reChk = prompt("Re-Enter Password")
+            if (pass === reChk) {
+                alert("Password matched")
+            } else {
+                alert("Password don't matched")
+            }
+        }
+        // task6
+        var greeting;
+        var hour = 13;
+        if (hour < 18) {
+            greeting = "Good day";
+            alert(greeting)
+        } else {
+            greeting = "Good evening";
+            alert(greeting)
+        }
+        // task7
+        var time = +prompt("Whats the time (In 24-Hour Format)")
+
+        if (time >= 0000 && time < 1200) {
+            alert("Good Morning")
+        } else if (time >= 1200 && time < 1700) {
+            alert("Good Afternoon")
+        } else if (time >= 1700 && time < 2100) {
+            alert("Good Evening")
+        } else if (time >= 2100 && time < 2359) {
+            alert("Good Night")
+        } else {
+            alert("Incorrect Format")
+        }
+
+        // ch 14-16
+        // // Q1
+        // var stdNames = [];
+
+
+
+        // // Q3
+        // var numArray = [1, 2, 3, 4, 5]
+        // alert(stingArray)
+
+
+        // // Q4
+        // var stringArray = ["Hello", "World", "How", "Are", "You"]
+        // alert(stringArray)
+
+
+        // // Q6
+        // var mixedArray=[5,"Hello",true]
+        // alert(mixedArray)
+
+
+        // // Q7
+        // var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"]
+        // document.write("<h1>Qualifications:</h1>")
+        // document.write("<ol>")
+        // document.write("<li>" + qualifications[0] + "</li>")
+        // document.write("<li>" + qualifications[1] + "</li>")
+        // document.write("<li>" + qualifications[2] + "</li>")
+        // document.write("<li>" + qualifications[3] + "</li>")
+        // document.write("<li>" + qualifications[4] + "</li>")
+        // document.write("<li>" + qualifications[5] + "</li>")
+        // document.write("<li>" + qualifications[6] + "</li>")
+        // document.write("<li>" + qualifications[7] + "</li>")
+        // document.write("</ol>")
+
+
+        // // Q8
+        // var students = ["Michael", "John", "Tony"]
+        // var obNum = [320, 230, 480]
+        // var total = 500;
+        // var result0 = (obNum[0] / total) * 100;
+        // var result1 = (obNum[1] / total) * 100;
+        // var result2 = (obNum[2] / total) * 100;
+
+        // document.write("<h2>Score of " + students[0] + " is " + obNum[0] + ". Percentage: " + result0 + "%</h2>")
+        // document.write("<h2>Score of " + students[1] + " is " + obNum[1] + ". Percentage: " + result1 + "%</h2>")
+        // document.write("<h2>Score of " + students[2] + " is " + obNum[2] + ". Percentage: " + result2 + "%</h2>")
+
+
+        // Q9
+        // var colors = ["red", "green", "blue"]
+        // document.write("Initial Colors: " + colors + "<br>")
+        // alert("Initial Colors: " + colors)
+
+        // var color1 = prompt("What color you want to add in begining")
+        // colors.unshift(color1)
+        // alert("Color added to begining: " + colors)
+        // document.write("Color added to begining: " + colors + "<br>")
+
+        // var color2 = prompt("What color you want to add in end")
+        // colors.push(color2)
+        // alert("Color added to end: " + colors)
+        // document.write("Color added to end: " + colors + "<br>")
+
+        // var color3 = prompt("What color you want to add in begining first")
+        // colors.unshift(color3)
+        // var color4 = prompt("What color you want to add in begining second")
+        // colors.unshift(color4)
+        // alert("Color added to begining: " + colors)
+        // document.write("Two Color added to begining: " + colors + "<br>")
+
+        // colors.pop()
+        // alert("Color deleted form end: " + colors)
+        // document.write("Color deleted form end: " + colors + "<br>")
+
+        // var indexNum = prompt("At which number you want to add your color")
+        // var color5 = prompt("Which color you want to add")
+        // var arr = indexNum - 1
+        // colors.splice(arr, 0, color5)
+        // alert("Your color added at number " + indexNum + ": " + colors)
+        // document.write("Your color added at number " + indexNum + ": " + colors + "<br>")
+
+        // // var indexNum1 = prompt("At which number you want to delete colors from")
+        // // var color6 = prompt("how many color Ypu want to delete")
+
+        // // document.write(colors + "<br>")
+        // // var newColors = colors.splice(1, 2);
+        // // document.write("Updated list: " + newColors)
+
+
+
+        // // Q10
+
+        // var stdScore = [320, 230, 480, 120]
+        // document.write("<h3>Student Scores: " + stdScore + "</h3>")
+        // var ordered = stdScore.sort();
+        // document.write("<h3>Order Scores of Stucents: " + ordered + "</h3>")
+
+
+        // // Q11
+        // var cities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "Multan", "Sialkot"]
+        // document.write("<h3>Cities list: " + cities + "</h3>")
+        // var slectCities = cities.slice(1, 4);
+        // document.write("<h3>Selected cities list: " + slectCities + "</h3>")
+
+
+        // // Q12
+        // var arr = ["This", "Is", "My", "Cat"]
+        // document.write("<h3>Array: " + arr + "</h3>")
+        // document.write("<h3>String: " + arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3] + " " + "</h3>")
+
+
+        // // Q15
+        // var manufactures = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"]
+        // document.write("<select>")
+        // document.write("<option>" + manufactures[0] + "</obtion>")
+        // document.write("<option>" + manufactures[1] + "</obtion>")
+        // document.write("<option>" + manufactures[2] + "</obtion>")
+        // document.write("<option>" + manufactures[3] + "</obtion>")
+        // document.write("<option>" + manufactures[4] + "</obtion>")
+        // document.write("<option>" + manufactures[5] + "</obtion>")
+        // document.write("</select>")
+
+        // ch17-20
+        // // // Q7
+        // var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+        // var B = prompt("Choose 1: cake, apple pie, cookie, chips, patties")
+        // for (var i = 0; i < A.length; i++) {
+        //     if (B === A[i]) {
+        //         var indexAt = i;
+        //     }
+        // }
+        // if (indexAt) {
+        //     document.write("'" + B + "'" + " at index-" + indexAt)
+        // } else {
+        //     document.write("Wrong Entry")
+        // }
+
+
+
+        // // Q8
+        // var nums = [prompt("number1"), prompt("number2"), prompt("number3"), prompt("number4"), prompt("number5")]
+        // document.write("Numbers You Entered:  " + nums)
+        // var ordered = nums.sort();
+        // document.write("<br> Largest Number: " + ordered[4])
+
+
+
+
+        // // Q9
+        // var nums = [prompt("number1"), prompt("number2"), prompt("number3"), prompt("number4"), prompt("number5")]
+        // document.write("Numbers You Entered:  " + nums)
+        // var ordered = nums.sort();
+        // document.write("<br> Smallest Number: " + ordered[0])
+
+
+        // // Q10
+        // for (var i = 1; i <= 20; i++) {
+        //     document.write(i * 5 + ",")
+        // }
+    </script>
+</body>
+
+</html>

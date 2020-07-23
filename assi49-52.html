@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1. Create a signup form and display form data in your web page on submission. -->
+    <!-- <form>
+
+        <p>Name</p>
+        <input type="text" id="name">
+        <p>Email</p>
+        <input type="text" id="email">
+        <p>Number</p>
+        <input type="text" id="num">
+        <p>Address</p>
+        <input type="text" id="add">
+    </form><br>
+    <button onclick="sub()">Submit</button>
+    <div id="printt">
+        <p id="newname"></p>
+        <p id="newemail"></p>
+        <p id="newnum"></p>
+        <p id="newadd"></p>
+    </div>
+    <button onclick="pr('printt')">Print</button> -->
+    <!-- ------------------------------------------------------------------------------------- -->
+    <!-- 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. -->
+    <!-- <p id="readmo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.....</p>
+    <button onclick="readm()">Read More</button> -->
+    <!-- ------------------------------------------------------------------------------------- -->
+    <!-- 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in table. Each row of table must contain a delete button and an edit button. On click
+    on delete button entire row should be deleted. On click on edit button, a hidden form will appear with the values of that row. -->
+    <!-- <div class="container">
+        <div class="tab tab-1">
+            <table id="table" border="1">
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                </tr>
+
+            </table>
+        </div><br><br><br>
+        <div class="tab tab-2">
+            Index :<input type="text" name="fname" id="fname"> Name :<input type="text" name="lname" id="lname"> Class :<input type="number" name="age" id="age"><br>
+
+            <button onclick="addHtmlTableRow();">Add</button>
+            <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+            <button onclick="removeSelectedRow();">Remove</button>
+        </div>
+    </div> -->
+</body>
+<script>
+    //1. Create a signup form and display form data in your web
+    // page on submission.
+    // ---sol---
+    // function sub() {
+    //     var name = document.getElementById("name").value
+    //     var email = document.getElementById("email").value
+    //     var num = document.getElementById("num").value
+    //     var add = document.getElementById("add").value
+    //     document.getElementById("newname").innerHTML = "Name = " + name
+    //     document.getElementById("newemail").innerHTML = "E-mail = " + email
+    //     document.getElementById("newnum").innerHTML = "Number = " + num
+    //     document.getElementById("newadd").innerHTML = "Address = " + add
+    // }
+
+    // function pr(paravalue) {
+    //     var backup = document.body.innerHTML;
+    //     var divcontent = document.getElementById(
+    //         paravalue).innerHTML
+    //     document.body.innerHTML = divcontent;
+    //     window.print();
+    //     document.body.innerHTML = backup;
+    // }
+    // -------------------------------------------------------------------------------------
+    //2. Suppose in your webpage there is content area in which
+    // you have entered your item details, but user can only see
+    // some details on first look. When user clicks on “Read
+    // more” button, full detail of that particular item will be
+    // displayed.
+    // ---sol---
+    // function readm() {
+    //     var para = document.getElementById("readmo")
+    //     para.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dicta cum fuga iste adipisci est eius quos repellat eligendi repudiandae corporis perferendis soluta, animi ullam quam recusandae porro natus id."
+
+    // }
+    // -------------------------------------------------------------------------------------
+    //     3. In previous assignment you have created a tabular data
+    // using javascript. Let’s modify that. Create a form which
+    // takes student’s details and show each student detail in
+    // table. Each row of table must contain a delete button and
+    // an edit button. On click on delete button entire row should
+    // be deleted. On click on edit button, a hidden form will
+    // appear with the values of that row.
+    // ---sol---
+    // var rIndex,
+    //     table = document.getElementById("table");
+
+    // // check the empty input
+    // function checkEmptyInput() {
+    //     var isEmpty = false,
+    //         fname = document.getElementById("fname").value,
+    //         lname = document.getElementById("lname").value,
+    //         age = document.getElementById("age").value;
+
+    //     if (fname === "") {
+    //         alert("First Name Connot Be Empty");
+    //         isEmpty = true;
+    //     } else if (lname === "") {
+    //         alert("Last Name Connot Be Empty");
+    //         isEmpty = true;
+    //     } else if (age === "") {
+    //         alert("Age Connot Be Empty");
+    //         isEmpty = true;
+    //     }
+    //     return isEmpty;
+    // }
+
+    // // add Row
+    // function addHtmlTableRow() {
+    //     // get the table by id
+    //     // create a new row and cells
+    //     // get value from input text
+    //     // set the values into row cell's
+    //     if (!checkEmptyInput()) {
+    //         var newRow = table.insertRow(table.length),
+    //             cell1 = newRow.insertCell(0),
+    //             cell2 = newRow.insertCell(1),
+    //             cell3 = newRow.insertCell(2),
+    //             fname = document.getElementById("fname").value,
+    //             lname = document.getElementById("lname").value,
+    //             age = document.getElementById("age").value;
+
+    //         cell1.innerHTML = fname;
+    //         cell2.innerHTML = lname;
+    //         cell3.innerHTML = age;
+    //         // call the function to set the event to the new row
+    //         selectedRowToInput();
+    //     }
+    // }
+
+    // // display selected row data into input text
+    // function selectedRowToInput() {
+
+    //     for (var i = 1; i < table.rows.length; i++) {
+    //         table.rows[i].onclick = function() {
+    //             // get the seected row index
+    //             rIndex = this.rowIndex;
+    //             document.getElementById("fname").value = this.cells[0].innerHTML;
+    //             document.getElementById("lname").value = this.cells[1].innerHTML;
+    //             document.getElementById("age").value = this.cells[2].innerHTML;
+    //         };
+    //     }
+    // }
+    // selectedRowToInput();
+
+    // function editHtmlTbleSelectedRow() {
+    //     var fname = document.getElementById("fname").value,
+    //         lname = document.getElementById("lname").value,
+    //         age = document.getElementById("age").value;
+    //     if (!checkEmptyInput()) {
+    //         table.rows[rIndex].cells[0].innerHTML = fname;
+    //         table.rows[rIndex].cells[1].innerHTML = lname;
+    //         table.rows[rIndex].cells[2].innerHTML = age;
+    //     }
+    // }
+
+    // function removeSelectedRow() {
+    //     table.deleteRow(rIndex);
+    //     // clear input text
+    //     document.getElementById("fname").value = "";
+    //     document.getElementById("lname").value = "";
+    //     document.getElementById("age").value = "";
+    // }
+</script>
+
+</html>
